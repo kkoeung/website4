@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>climb</title>
+     <!-- css link -->
+     <link rel="stylesheet" href="main.css">
+     <!-- tailwind link -->
+     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+     <!-- tailwind script -->
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!-- flowbite link -->
+     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <!-- ionicon -->
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.
+    js"></script>
+    <!-- Data Aos link & script-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+<body>
+    <section class="section overflow-hidden">
+        <!-- header -->
+        <div class="header">
+            <div class="head w-full py-2 flex flex-row justify-between">
+                <!-- Head logo -->
+                <div class="header-content flex flex-col items-center mx-8" data-aos="fade-right"
+                data-aos-offset="400"
+                data-aos-easing="ease-in-sine">
+                    <a herf class="header-item flex justify-center items-center">
+                        <img src="./images/8.jpg" class="header-image w-16 rounded-full">
+                    </a>
+                    <span class="header-text text-lg font-bold mx-4">
+                        Climb
+                    </span>
+                </div>
+
+                <!-- Close Button -->
+                <div class="menu-hide flex justify-center items-center">
+                    <!-- drawer init and show -->
+                    <div class="text-center">
+                        <button class="text-white bg-purple-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-1 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+                            <div class="text-3xl flex items-center">
+                                <ion-icon name="menu"></ion-icon>
+                            </div>
+                        </button>
+                    </div>
+                    
+                    <!-- drawer component -->
+                    <div id="drawer-navigation" class="fixed z-40 h-screen p-4 overflow-y-auto bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-navigation-label">
+                        <h5 id="drawer-navigation-label" class="text-base font-bold text-gray-500 uppercase dark:text-gray-400 text-gray-600">Menu</h5>
+                        <button type="button" data-drawer-dismiss="drawer-navigation" aria-controls="drawer-navigation" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm px-2 py-1 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
+                            <div class="text-3xl hover:text-red-600">
+                                <ion-icon name="close-outline"></ion-icon>
+                            </div>
+                        </button>
+                    <div class="py-4 overflow-y-auto">
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="index.html" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 hover:text-purple-600 dark:hover:bg-gray-700">
+                                    <div class="text-xl">
+                                        <ion-icon name="home-outline"></ion-icon>
+                                    </div>
+                                    <span class="w-full ml-3 font-bold text-gray-700 hover:text-purple-600">Home</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 hover:text-purple-600 dark:hover:bg-gray-700">
+                                    <div class="text-xl">
+                                        <ion-icon name="alert-circle-outline"></ion-icon>
+                                    </div>
+                                    <span class="w-full ml-3 font-bold text-gray-700 hover:text-purple-600">About</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 hover:text-purple-600 dark:hover:bg-gray-700">
+                                    <div class="text-xl">
+                                        <ion-icon name="pricetags-outline"></ion-icon>
+                                    </div>
+                                    <span class="w-full ml-3 font-bold text-gray-700 hover:text-purple-600">Shop</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 hover:text-purple-600 dark:hover:bg-gray-700">
+                                    <div class="text-xl">
+                                        <ion-icon name="arrow-redo-circle-outline"></ion-icon>
+                                    </div>
+                                    <span class="w-full ml-3 font-bold text-gray-700 hover:text-purple-600">Donate</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 hover:text-purple-600 dark:hover:bg-gray-700">
+                                    <div class="text-xl">
+                                        <ion-icon name="cube-outline"></ion-icon>
+                                    </div>
+                                    <span class="w-full ml-3 font-bold text-gray-700 hover:text-purple-600">Contact</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 hover:text-purple-600 dark:hover:bg-gray-700">
+                                    <div class="text-xl">
+                                        <ion-icon name="log-out-outline"></ion-icon>
+                                    </div>
+                                    <span class="w-full flex-1 ml-3 whitespace-nowrap font-bold text-gray-700 hover:text-purple-600">Signin</span>
+                                </a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu -->
+                <div class="header-menu flex items-center w-6/12">
+                    <ul class="flex flex-row justify-evenly items-center w-full">
+                        <a href="index.html" class="rounded hover:bg-purple-500">
+                            <li class="text-md font-bold text-gray-700 px-4 py-1.5 hover:text-white">Home</li>
+                        </a>
+                        <a href="index.html" class="rounded hover:bg-purple-600">
+                            <li class="text-md font-bold text-gray-700 px-4 py-1.5 hover:text-white px-4 py-1.5 hover:text-white">About</li>
+                        </a>
+                        <a href="index.html" class="rounded hover:bg-purple-600">
+                            <li class="text-md font-bold text-gray-700 px-4 py-1.5 hover:text-white">Shop</li>
+                        </a>
+                        <a href="index.html" class="rounded hover:bg-purple-600">
+                            <li class="text-md font-bold text-gray-700 px-4 py-1.5 hover:text-white">Donate</li>
+                        </a>
+                        <a href="index.html" class="rounded hover:bg-purple-600">
+                            <li class="text-md font-bold text-gray-700 px-4 py-1.5 hover:text-white">Contact</li>
+                        </a>
+                        
+                        <!-- Login/signup -->
+                        <div class="Login-signup">
+                            <button class="block text-white bg-purple-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button" data-modal-toggle="authentication-modal">
+                                Signin
+                            </button>
+                            
+                            <!-- Main modal -->
+                            <div id="authentication-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center">
+                                <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                                    <!-- Modal content -->
+                                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                        <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-toggle="authentication-modal">
+                                            <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                            <span class="sr-only">Close modal</span>
+                                        </button>
+                                        <div class="py-6 px-6 lg:px-8">
+                                            <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h3>
+                                            <form class="space-y-6" action="#">
+                                                <div>
+                                                    <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                                                    <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" placeholder="name@company.com" required="">
+                                                </div>
+                                                <div>
+                                                    <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your password</label>
+                                                    <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required="">
+                                                </div>
+                                                <div class="flex justify-between">
+                                                    <div class="flex items-start">
+                                                        <div class="flex items-center h-5">
+                                                            <input id="remember" type="checkbox" value="" class="w-4 h-4 bg-gray-50 rounded border border-gray-300 focus:ring-3 focus:ring-blue-300 dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required="">
+                                                        </div>
+                                                        <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
+                                                    </div>
+                                                    <a href="#" class="text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a>
+                                                </div>
+                                                <button type="submit" class="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login to your account</button>
+                                                <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
+                                                    Not registered? <a href="#" class="text-blue-700 hover:underline dark:text-blue-500">Create account</a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- background cover -->
+        <div class="cover">
+            <div class="cover-image flex bg-center bg-cover" style="background-image: url(./images/cover.jpg)" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
+                <div class="cover-item flex flex-col justify-center mt-12 p-8 w-2/6">
+                    <div class="">
+                        <h2 class="cover-text text-6xl text-white font-bold" data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500">Serving you
+                            since 1989.</h2>
+                    </div>
+                    <div class="mt-8">
+                        <span class="cover-text1 text-lg text-white" data-aos="fade-up"
+                        data-aos-duration="2000">
+                            Acme Outdoors is an outdoor and adventure shop located in the Boathouse District in Oklahoma City.
+                        </span>
+                    </div>
+                    <div class="mt-8" data-aos="fade-up"
+                    data-aos-duration="3000">
+                        <span class="cover-text2 text-md text-white font-bold border px-6 py-2 rounded-lg">
+                            Shop Merch
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- support -->
+        <div class="support flex justify-center mt-16">
+            <div class="support-content flex flex-col justify-between w-11/12">
+                <div class="support-item flex flex-row justify-between">
+                    <div class="support-items flex flex-col w-3/6 ">
+                        <span class="text-md ">
+                            WAYS TO SUPPORT
+                        </span>
+                        <span class="support-text1 text-4xl text-gray-700 font-bold tracking-wider">
+                            Support Acme Outdoors.
+                        </span>
+                    </div>
+                    <div class="support-item w-3/6 px-12">
+                        <span class="support-items text-md text-justify tracking-wider">
+                            COVID-19 has forced us to close our retail space, but we need support from patrons like yourself now more than ever. Below, we’ve listed the best ways to help us through this season.
+                        </span>
+                    </div>
+                </div>
+
+                <!-- cards -->
+                <div class="card-content flex flex-row mt-8">
+                    <div class="card-item w-2/6 h-80 bg-gray-800 ml-6 rounded-lg" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                        <div class="card-text flex flex-col m-6">
+                            <span class="text-3xl text-white font-bold">01</span>
+                            <span class="card-text1 text-center text-4xl text-white font-bold mt-14">SHOP PRODUCTS</span>
+                        </div>
+                        <div class=" flex flex-col m-8">
+                            <span class="text-md text-white text-justify">
+                                Our full product line is still available online here on our site! Getting outside and hiking is still something you can do. Get your gear now!
+                            </span>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="card-item w-2/6 h-80 bg-gray-800 ml-6 rounded-lg" data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000">
+                        <div class="card-text flex flex-col m-6">
+                            <span class="text-3xl text-white font-bold">02</span>
+                            <span class="card-text1 text-center text-4xl text-white font-bold mt-14">DONATE</span>
+                        </div>
+                        <div class="card-text flex flex-col m-8">
+                            <span class="text-md text-white text-justify">
+                                Since we've changed the way we operate to online only, and to ensure your safety, not all our staff is working. Donate to keep them afloat.
+                            </span>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="card-item w-2/6 h-80 bg-gray-800 ml-6 rounded-lg" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                        <div class="card-text flex flex-col m-6">
+                            <span class="text-3xl text-white font-bold">03</span>
+                            <span class="card-text1 text-center text-4xl text-white font-bold mt-14">BUY GIFT CARDS</span>
+                        </div>
+                        <div class="card-text flex flex-col m-8">
+                            <span class="text-md text-white text-justify">
+                                Have all the outdoor gear you need for now? Buy a gift card and use it later or share it with friends and family.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Product -->
+        <div class="product flex flex-col justify-center items-center mt-12">
+            <div class="product-content flex flex-col justify-between w-11/12">
+                <div class="product-items flex flex-row justify-between">
+                    <div class="product-item flex flex-col w-3/6 ">
+                        <span class="text-md ">
+                            SHOP PRODUCTS
+                        </span>
+                        <span class="product-text text-4xl text-gray-700 font-bold tracking-wider">
+                            Open 24/7/365.
+                        </span>
+                    </div>
+                </div>
+
+                <!-- product 2 -->
+                <div class="product-content2 flex flex-row mt-8">
+                    <div class="product-item2 flex flex-col justify-center items-center rounded-lg" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                        <div class="product-img2 flex flex-col m-4">
+                            <img src="./images/unsplash.jpg" class="h-64">
+                        </div>
+
+                        <div class="product-item2 flex flex-col justify-center items-center">
+                            <span class="product-text2 text-lg text-justify tracking-widest">
+                                White Tent
+                            </span>
+                            <span class="product-text2 text-lg text-justify tracking-widest">
+                                $ 180.00 USD
+                            </span>
+                            <span class="product-text2 text-lg text-justify tracking-widest">
+                                Details
+                            </span>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="product-item2 flex flex-col justify-center items-center rounded-lg" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                        <div class="product-img2 flex flex-col m-4">
+                            <img src="./images/Mib4-unsplash.jpg" class="h-64">
+                        </div>
+                        <div class="product-item2 flex flex-col justify-center items-center">
+                            <span class="product-text2 text-lg text-justify tracking-widest">
+                                Ream Coffee Tumbler
+                            </span>
+                            <span class="product-text2 text-lg text-justify tracking-widest">
+                                $ 18.00 USD
+                            </span>
+                            <span class="product-text2 text-lg text-justify tracking-widest">
+                                Details
+                            </span>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="product-item2 flex flex-col justify-center items-center rounded-lg" data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                        <div class="product-img2 flex flex-col m-4">
+                            <img src="./images/Wufjmg4-unsplash.jpg" class="h-64">
+                        </div>
+                        <div class="product-item2 flex flex-col justify-center items-center">
+                            <span class="product-text2 text-lg text-justify tracking-widest">
+                                Blue Canvas Pack
+                            </span>
+                            <span class="product-text2 text-lg text-justify tracking-widest">
+                                $ 88.00 USD
+                            </span>
+                            <span class="product-text2 text-lg text-justify tracking-widest">
+                                Details
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- business -->
+                <div class="business my-4">
+                    <div class="business-content">
+                        <div class="business-item flex justify-center items-center">
+                            <div class="business-itemed flex flex-col justify-center items-center py-8 max-w-xl">
+                                <span class="busines-text">
+                                    WHY ACME OUTDOORS?
+                                </span>
+                                <span class="business-text text-center text-3xl text-gray-800 font-bold py-4">
+                                    We’re the best in the business.
+                                </span>
+                                <span class="business-text text-center">
+                                    From more than 30 years, we’ve been leading the way across Oklahoma — creating the best possible customer experience since 1989.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="business-items flex flex-row py-8">
+                            <!-- 1 -->
+                            <div class="business-dilivery flex flex-col justify-center px-4 border border-red-500 mx-2 py-4" data-aos="fade-up"
+                            data-aos-duration="3000">
+                                <span class="text-5xl text-red-500">
+                                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                </span>
+                                <span class="text-2xl font-bold my-4 text-gray-800">
+                                    Lifetime Warranty
+                                </span>
+                                <span>
+                                    All our products — whether we make them or not — are backed by our lifetime warranty.
+                                </span>
+                            </div>
+                            <!-- 2 -->
+                            <div class="business-dilivery flex flex-col justify-center px-4 border border-red-500 mx-2 py-4" data-aos="fade-down"
+                            data-aos-duration="3000">
+                                <span class="text-5xl text-red-500">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                </span>
+                                <span class="text-2xl font-bold my-4 text-gray-800">
+                                    Shopping Experience
+                                </span>
+                                <span>
+                                    All our products — whether we make them or not — are backed by our lifetime warranty.
+                                </span>
+                            </div>
+                            <!-- 3 -->
+                            <div class="business-dilivery flex flex-col justify-center px-4 border border-red-500 mx-2 py-4" data-aos="fade-up"
+                            data-aos-duration="3000">
+                                <span class="text-5xl text-red-500">
+                                    <ion-icon name="bus-outline"></ion-icon>
+                                </span>
+                                <span class="text-2xl font-bold my-4 text-gray-800">
+                                    On-time Delivery
+                                </span>
+                                <span>
+                                    All our products — whether we make them or not — are backed by our lifetime warranty.
+                                </span>
+                            </div>
+                            <!-- 4 -->
+                            <div class="business-dilivery flex flex-col justify-center px-4 border border-red-500 mx-2 py-4" data-aos="fade-down"
+                            data-aos-duration="3000">
+                                <span class="text-5xl text-red-500">
+                                    <ion-icon name="chatbox-outline"></ion-icon>
+                                </span>
+                                <span class="text-2xl font-bold my-4 text-gray-800">
+                                    Best in Class Service
+                                </span>
+                                <span>
+                                    All our products — whether we make them or not — are backed by our lifetime warranty.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- wiew all products -->
+                <div class=" flex flex-row justify-center my-8">
+                    <div class="support-item flex justify-center items-center px-8 py-2 bg-blue-500 rounded-lg">
+                        <span class="text-lg font-bold tracking-widest ">
+                            Wiew all Products
+                        </span>
+                    </div>
+                </div>
+                <!-- shop local -->
+                <div class=" product-content3 flex flex-row justify-center my-8">
+                    <div class="product-img3 flex justify-center items-center rounded-lg" data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1500">
+                        <img src="./images/MYtok-unsplash (1).jpg">
+                    </div>
+                    <div class="product-item3 flex flex-col px-12 py-2 rounded-lg ">
+                        <span class="product-text3 text-4xl font-bold px-12 py-8" data-aos="fade-up"
+                        data-aos-duration="3000">
+                            Shop Local.
+                        </span>
+                        <span class="product-text4 flex flex-col text-md text-justify px-12" data-aos="fade-up"
+                        data-aos-duration="3000">
+                            <span class="my-1">
+                                We know that during COVID-19, a lot of folks around the city and state are feeling uneasy about the future - we’re not sure what the future holds either.
+                            </span>
+                            <span class="my-1">
+                                That said: we know that we love making sure you have the gear you need for your adventures, and we’re going to keep doing that - with our team - until the city tells us we can’t.
+                            </span>
+                            <span class="my-1">
+                                But as long as folks like yourself support small businesses around the city, then we’ll be here — every day, making sure your orders arrive on time.
+                            </span>
+                            <span class="my-1">
+                                -------
+                            </span>
+                            <span class="">
+                                Jane & John Doe
+                            </span>
+                            <span class="">
+                                Acme Outdoors
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- profile -->
+        <div class="profile my-12">
+            <div class="profile-content my-4 flex flex-row justify-center items-center">
+                <div class="profile-items w-2/6 flex flex-col justify-center items-center mx-8">
+                    <img src="./images/John.png" class="w-48" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <span class="text-2xl font-bold my-4">
+                        John                       
+                    </span>
+                    <span class="profile-text text-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga id assumenda pariatur odio similique maiores eaque reprehenderit laboriosam voluptatum quae? Tenetur dolore quas eveniet obcaecati nihil fuga praesentium iure laboriosam.                       
+                    </span>
+                </div>
+                <div class="profile-items w-2/6 flex flex-col justify-center items-center mx-8 my-4">
+                    <img src="./images/mary.png" class="w-48" data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
+                    <span class="text-2xl font-bold my-4">
+                        Mary
+                    </span>
+                    <span class="profile-text text-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga id assumenda pariatur odio similique maiores eaque reprehenderit laboriosam voluptatum quae? Tenetur dolore quas eveniet obcaecati nihil fuga praesentium iure laboriosam.
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- background cover -->
+        <div class="cover">
+            <div class="cover-image flex bg-center bg-cover" style="background-image: url(./images/cover1.jpg)" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                <div class="flex flex-col justify-end items-end w-full">
+                    <div class="cover-item text-right max-w-xl h-96 mt-12 p-8">
+                        <div class="">
+                            <h2 class="cover-text text-4xl text-white font-bold">How we're keeping you safe during COVID-19</h2>
+                        </div>
+                        <div class="mt-8">
+                            <span class="cover-text1 text-lg text-white">
+                                As an outdoor shop, we’ve taken precautionary measures to ensure the safety of all our customers and team members.
+                            </span>
+                        </div>
+                        <div class="mt-8">
+                            <span class="cover-text2 text-md text-white font-bold border px-6 py-2 rounded-lg">
+                                Red Our Statement
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- footer -->
+         <div class="footer bg-gray-800">
+            <div class="footer-content flex flex-col justify-center items-center">
+                <div class="footer-item w-11/12 flex flex-row justify-between py-10 ">
+                    <div class="footer-itemed flex flex-col items-center">
+                        <a href="" class=" rounded-full">
+                            <img src="./images/8.jpg" class="footer-img w-16 rounded-2xl">
+                        </a>
+                        <span class="footer-text text-md text-gray-200 font-bold m-4">
+                            <a href="#">
+                                Climb
+                            </a>
+                        </span>
+                    </div>
+                    <div class=" icon text-4xl text-gray-300">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        <ion-icon name="navigate-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center my-4">
+                    <span class="text-gray-400">
+                        Made in <span class="text-red-600">Climb.</span>© 2022.
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- data aos script -->
+    <script>
+        AOS.init();
+    </script>
+    <!-- flowbite script -->
+    <script src="../path/to/flowbite/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
+</body>
+</html>
